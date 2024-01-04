@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <Script src='https://www.google.com/recaptcha/api.js'></Script>
+      <Script src='https://www.google.com/recaptcha/api.js?render=6Le7UkUpAAAAALu8RK5I6sgdQ4ZHnY1ZBVAbjXV-'></Script>
       <body className={inter.className}>{children}</body>
     </html>
   )

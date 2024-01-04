@@ -26,10 +26,10 @@ export default function Home() {
   }, [data])
 
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex'>
+    <main className='p-24'>
+      <div>
         <p>recaptcha V3</p>
-        <button className='border-2 border-black' onClick={onClick}>
+        <button className='border-2 border-black px-4 py-2' onClick={onClick}>
           Submit
         </button>
         <p>response:</p>

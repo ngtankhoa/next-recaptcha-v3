@@ -9,6 +9,7 @@ export default function Home() {
       grecaptcha.execute('6Le7UkUpAAAAALu8RK5I6sgdQ4ZHnY1ZBVAbjXV-', { action: 'submit' }).then(function (token) {
         // Add your logic to submit to your backend server here.
         window.console.log('call backend logic here')
+        window.console.log(token)
       })
     })
   }

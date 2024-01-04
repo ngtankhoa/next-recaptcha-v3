@@ -11,7 +11,7 @@ export default function Home() {
         window.console.log('call backend logic here')
         window.console.log(token)
 
-        fetch('https://www.google.com/recaptcha/api/siteverify', {
+        fetch('www.google.com/recaptcha/api/siteverify', {
           method: 'POST', // Phương thức HTTP là POST
           headers: {
             'Content-Type': 'application/json',

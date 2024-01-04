@@ -2,14 +2,8 @@ export default function handler(req, res) {
   console.log(req.query)
   fetch('https://www.google.com/recaptcha/api/siteverify', {
     method: 'POST', // Phương thức HTTP là POST
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      secret: '6Le7UkUpAAAAALazn95-rmkedACWN5uyNNJDkMZO',
-      response: req.query.token,
-      // Thêm các tham số bạn cần gửi với API
-    }),
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: `secret=6Le7UkUpAAAAALazn95-rmkedACWN5uyNNJDkMZO&response=${req.query.token}`,
   })
     .then((response) => response.json()) // Chuyển đổi kết quả trả về thành JSON
     .then((data) => {
